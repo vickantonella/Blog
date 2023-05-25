@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css"> 
+    <title>BLOG</title>
+</head>
+<body>
+    <script src="blog.js"></script>
+  <header>
+    <h1>BLOG</h1>
+    <nav>
+      <ul>
+        <li><a href="blog.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li> 
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form onsubmit="event.preventDefault(); gerenciarUsuario();">
+      <label for="nome-usuario">Nome:</label>
+      <input type="text" id="nome-usuario" required><br><br>
+      <label for="email-usuario">Email:</label>
+      <input type="email" id="email-usuario" required><br><br>
+      <button type="submit">Enviar</button>  
+    </form>
+    
+    <section id="create-post">
+      <br></br>
+      <h2>Criar postagem:</h2>
+      <form>
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" name="titulo"><br><br>
+          <label for="conteudo">Conteúdo:</label>
+          <textarea id="conteudo" name="conteudo"></textarea><br><br>
+          <button type="button" onclick="criarPostagem()">Publicar</button><br></br>
+          <h2>ÚLTIMAS POSTAGENS:</h2>
+        </form>
+      <div id="postagens-container"></div>
+    </section>
+    <section id="posts">
+    <article>
+      <p></p>
+        <h2 id="teste">Qual a relação entre tecnologia e saúde mental?</h2>
+        <p>Por Carmen Miranda em 12/05/2023</p>
+        <p>Tecnologia e saúde mental não são inimigas, mas é preciso encontrar o equilíbrio para que elas possam ser aliadas.</p>
+        <p>Indo ao encontro desse pensamento, é possível que a tecnologia auxilie na promoção da melhora na saúde mental, onde você pode procurar atendimento psicológico on-line, por exemplo. Essa ferramenta é muito importante para aqueles que por um motivo ou outro não conseguem ir presencialmente ao consultório.</p>        
+        <p>Existem também aplicativos que podem te ajudar com exercícios para controlar aspectos como ansiedade e estresse. Você pode fazer meditação, ouvir músicas relaxantes, enfim, muita coisa que pode trazer melhorias no seu dia a dia.</p>        
+        <p>Ou seja, existem muitas maneiras positivas de usar a tecnologia, ela não é nem vilã, nem mocinha. É necessário aprender a fazer bom uso do que temos disponível.</p>
+        <p></p>
+        <li href="#">Comentários:</li>
+      <div id="comentarios"></div>
+      <p></p>
+      <form onsubmit="event.preventDefault(); validarComentario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Usuário"><br><br>
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" placeholder="Deixe aqui seu comentário"></textarea><br><br>
+        <button type="submit">Enviar</button><br><br>
+      </form>
+
+        <form>
+          <br></br>
+          <button type="submit" onclick="compartilharFacebook()">Compartilhar no Facebook</button>
+          <button type="submit" onclick="compartilharTwitter()">Compartilhar no Twitter</button>
+          <button type="submit" onclick="compartilharWhatsApp()">Compartilhar no WhatsApp</button>
+        </form>
+    </article>
+</section>
+</main>
+   <footer>
+    <p>&copy; 2023 BLOG</p>
+  </footer>
+</body>
+</html>
+

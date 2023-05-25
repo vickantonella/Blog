@@ -1,0 +1,42 @@
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.85);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+  
+  header {
+    background-color: rgba(95, 79, 172, 0.69);
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  main {
+    padding: 30px;
+    text-align: justify;
+  }
+  
+  
+  ul {
+      padding: 10;
+    }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  h2 {color: rgb(68, 0, 131);
+  }
+
+  h3 {
+    color: rgb(140, 23, 163);
+  }
